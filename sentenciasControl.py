@@ -1,14 +1,11 @@
 #sentenciasControl.py
 
-a = 232
+engine = str(input("Database Engine: -- "))
+#host = str(input("Host: "))
+port = str(input("Port: "))
 
-b = 87
 
-c = 9
-
-if a < b:
-	print("a es menor")
-elif c < b:
-	print("c es menor que b")
+if engine == "Postgres" or port == "5432": 
+	print("Postgres use the next Host: 127.0.0.1")
 else:
-	print("b es menor")
+	print("Database Engine Unknow")
